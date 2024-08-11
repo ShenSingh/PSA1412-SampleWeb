@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnHTML | Contact</title>
+    <link rel="stylesheet" href="/src/css/contact.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>LearnHTML.edu</h1>
+            <nav>
+                <ul>
+                    <li><a href="/src/index.html">Home</a></li>
+                    <li><a href="/src/htmlPage/about.html">About</a></li>
+                    <li><a href="/src/htmlPage/couses.html">Courses</a></li>
+                    <li><a href="/src/htmlPage/forum.html">Forum</a></li>
+                    <li><a href="/src/htmlPage/contact.html" class="active">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="contact">
+                <div class="left-column">
+                    <h3>LearnHTML.edu</h3>
+                    <p>
+                        No. 40/44, <br>
+                        Colombo 10,<br>
+                        Sri Lanka.
+                    </p>
+                    <p>0094 045 9888898</p>
+                    <p><a href="mailto:learnhtml@edu.lk">learnhtml@edu.lk</a></p>
+                    <p><a href="http://learnhtml.edu">http://learnhtml.edu</a></p>
+                </div>
+                <div class="right-column">
+                    <form action="">
+                        <h3>Personal Information:</h3>
+
+                        <label for="name">First name:</label>
+                        <input type="text" id="name" name="name" required>
+
+                        <label for="lname">Last name:</label>
+                        <input type="text" id="lname" name="lname" required>
+
+                        <label for="gender">Gender:</label>
+                        <div class="radio-group">
+                            <input type="radio" id="male" name="gender" value="male">
+                            <label for="male">Male</label>
+                        </div>
+                        <div class="radio-group">
+                            <input type="radio" id="female" name="gender" value="female">
+                            <label for="female">Female</label>
+                        </div>
+                        
+
+                        <label for="age">Age:</label>
+                        <select name="age" id="age" required>
+                            <option value="">Select age</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option> 
+                            <option value="20">20</option>
+                            <option value="21">21</option> 
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                        </select>
+
+                        <label for="country">Country:</label>
+                        <select name="country" id="country" required>
+                            <option value="">Select country</option>
+                            <option value="Sri Lanka">Sri Lanka</option>
+                            <option value="USA">USA</option>
+                            <option value="UK">UK</option>
+                            <option value="Canada">Canada</option>
+                            <option value="Australia">Australia</option>
+                        </select>
+
+                        <label for="otherDetails">Other Details:</label>
+                        <textarea name="otherDetails" id="otherDetails" rows="4"></textarea>
+
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>© LearnHTML.edu - 2020</p>
+        </footer>
+    </div>
+</body>
+</html>
